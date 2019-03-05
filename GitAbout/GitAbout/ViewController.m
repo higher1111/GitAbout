@@ -18,8 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"你个s傻逼");
-    
+    // 标签
     UILabel *lab = [[UILabel alloc] init];
     lab.frame = CGRectMake(10, 88, 100, 30);
     lab.backgroundColor = [UIColor brownColor];
@@ -27,6 +26,7 @@
     lab.text = @"今天下雨呢🌧";
     [self.view addSubview:lab];
     
+    // 按钮
     UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     addBtn.frame = CGRectMake(10, 150, 100, 20);
     addBtn.layer.masksToBounds = YES;
@@ -34,6 +34,7 @@
     addBtn.layer.borderWidth = 1;
     addBtn.layer.borderColor = [UIColor grayColor].CGColor;
     [self.view addSubview:addBtn];
+    
 }
 
 
