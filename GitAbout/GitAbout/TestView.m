@@ -16,11 +16,9 @@
     if (self) {
         NSLog(@"这是我的第二次提交");
     }
+    NSLog(@"测试一下冲突");
     return self;
 }
-<<<<<<< HEAD
-=======
-*/
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -30,6 +28,4 @@
     }
     return self;
 }
-
->>>>>>> a5a203395201a0773a88b0a608d60f1da77eee14
 @end
