@@ -18,4 +18,18 @@
     }
     return self;
 }
+<<<<<<< HEAD
+=======
+*/
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor whiteColor];
+    }
+    return self;
+}
+
+>>>>>>> a5a203395201a0773a88b0a608d60f1da77eee14
 @end
