@@ -16,7 +16,19 @@
     if (self) {
         NSLog(@"这是我的第二次提交");
     }
+    NSLog(@"测试一下冲突");
     return self;
 }
 
+<<<<<<< HEAD
+=======
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor whiteColor];
+    }
+    return self;
+}
+>>>>>>> a60dab7dd24ed2cd233d47eaecd9ee4f8454f812
 @end
