@@ -32,8 +32,11 @@
     addBtn.layer.borderWidth = 1;
     addBtn.layer.borderColor = [UIColor grayColor].CGColor;
     [self.view addSubview:addBtn];
-    
+    [addBtn addTarget:self action:@selector(addBtnAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)addBtnAction {
+    
+}
 
 @end
