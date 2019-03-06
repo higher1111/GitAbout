@@ -16,9 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    NSLog(@"你个s傻逼");
     
     UILabel *lab = [[UILabel alloc] init];
     lab.frame = CGRectMake(10, 88, 100, 30);
@@ -34,7 +31,11 @@
     addBtn.layer.borderWidth = 1;
     addBtn.layer.borderColor = [UIColor grayColor].CGColor;
     [self.view addSubview:addBtn];
+    [addBtn addTarget:self action:@selector(addBtnAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)addBtnAction {
+    
+}
 
 @end
