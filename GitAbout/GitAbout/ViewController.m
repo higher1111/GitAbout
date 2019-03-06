@@ -16,8 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
     // 标签
     UILabel *lab = [[UILabel alloc] init];
     lab.frame = CGRectMake(10, 88, 100, 30);
