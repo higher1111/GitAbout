@@ -29,4 +29,8 @@
     return self;
 }
 
+- (void)createUI {
+    self.backgroundColor = [UIColor whiteColor];
+}
+
 @end
