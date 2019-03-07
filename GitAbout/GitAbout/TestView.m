@@ -20,6 +20,8 @@
     return self;
 }
 
+<<<<<<< HEAD
+=======
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -28,4 +30,5 @@
     }
     return self;
 }
+>>>>>>> a60dab7dd24ed2cd233d47eaecd9ee4f8454f812
 @end
