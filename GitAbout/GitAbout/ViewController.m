@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // 标签
     UILabel *lab = [[UILabel alloc] init];
-    lab.frame = CGRectMake(10, 88, 100, 30);
+    lab.frame = CGRectMake(10, 88, 150, 30);
     lab.backgroundColor = [UIColor brownColor];
     lab.textColor = [UIColor whiteColor];
     lab.text = @"今天下雨呢🌧";
@@ -31,12 +31,10 @@
     addBtn.layer.cornerRadius = 5;
     addBtn.layer.borderWidth = 1;
     addBtn.layer.borderColor = [UIColor grayColor].CGColor;
+    [addBtn setTitle:@"添加" forState:UIControlStateNormal];
     [self.view addSubview:addBtn];
-    [addBtn addTarget:self action:@selector(addBtnAction) forControlEvents:UIControlEventTouchUpInside];
-}
-
-- (void)addBtnAction {
     
 }
+
 
 @end
