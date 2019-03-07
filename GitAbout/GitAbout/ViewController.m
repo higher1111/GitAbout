@@ -33,6 +33,14 @@
     addBtn.layer.borderColor = [UIColor grayColor].CGColor;
     [addBtn setTitle:@"添加" forState:UIControlStateNormal];
     [self.view addSubview:addBtn];
+    [addBtn addTarget:self action:@selector(addBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 180, 100, 30)];
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    [self.view addSubview:textField];
+}
+
+- (void)addBtnAction {
     
 }
 
