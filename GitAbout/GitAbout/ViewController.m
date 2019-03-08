@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SNTableView.h"
 
 @interface ViewController ()
 
@@ -35,11 +36,17 @@
     [self.view addSubview:addBtn];
     [addBtn addTarget:self action:@selector(addBtnAction) forControlEvents:UIControlEventTouchUpInside];
     
+    // 输入框
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 180, 100, 30)];
     textField.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:textField];
     
+
     // 我要顶！d=====(￣▽￣*)b
+    SNTableView *tbView = [[SNTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    tbView.delegate = self;
+    tbView.dataSource = self;
+    [self.view addSubview:tbView];
 }
 
 - (void)addBtnAction {
