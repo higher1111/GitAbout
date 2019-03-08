@@ -38,6 +38,8 @@
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 180, 100, 30)];
     textField.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:textField];
+    
+    // 我要顶！d=====(￣▽￣*)b
 }
 
 - (void)addBtnAction {
