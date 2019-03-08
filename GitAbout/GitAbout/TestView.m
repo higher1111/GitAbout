@@ -10,12 +10,31 @@
 
 @implementation TestView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"这是我的第二次提交");
+    }
+    NSLog(@"测试一下冲突");
+    return self;
 }
-*/
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor whiteColor];
+    }
+    return self;
+}
+
+- (void)createUI {
+    self.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)refreshView {
+    [self removeFromSuperview];
+}
 
 @end
