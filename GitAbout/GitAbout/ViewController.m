@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SNTableView.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -53,5 +53,8 @@
     
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
 
 @end
