@@ -33,8 +33,4 @@
     self.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)refreshView {
-    [self removeFromSuperview];
-}
-
 @end
