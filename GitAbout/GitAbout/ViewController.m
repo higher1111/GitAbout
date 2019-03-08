@@ -37,4 +37,8 @@
 }
 
 
+- (void)settleAction {
+    NSLog(@"去结算");
+}
+
 @end
