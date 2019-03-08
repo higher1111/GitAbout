@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SNTableView.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()
 
 @end
 
@@ -51,10 +51,6 @@
 
 - (void)addBtnAction {
     NSLog(@"点击了添加按钮");
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
 }
 
 @end
