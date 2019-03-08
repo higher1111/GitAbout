@@ -50,7 +50,7 @@
 }
 
 - (void)addBtnAction {
-    
+    NSLog(@"点击了添加按钮");
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
